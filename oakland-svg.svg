@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="oakGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#2d6a4f" />
+    </linearGradient>
+  </defs>
+  <!-- Icono Escudo + Hojas -->
+  <g transform="translate(10, 10)">
+    <path d="M 50 10 L 85 25 V 55 C 85 75 50 95 50 95 C 50 95 15 75 15 55 V 25 Z" fill="none" stroke="url(#oakGrad1)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Árbol / Hoja Central Geométrica -->
+    <path d="M 50 30 L 50 75 M 50 35 L 68 50 M 50 48 L 65 62 M 50 35 L 32 50 M 50 48 L 35 62" fill="none" stroke="#d4af37" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <!-- Texto -->
+  <text x="115" y="62" font-family="system-ui, sans-serif" font-weight="800" font-size="38" fill="#f0f4f2" letter-spacing="-0.5">Oakline<tspan fill="#d4af37">Studio</tspan></text>
+  <text x="117" y="82" font-family="system-ui, sans-serif" font-weight="500" font-size="13" fill="#9ab0a5" letter-spacing="3">HIGH-PERFORMANCE LANDINGS</text>
+</svg>
