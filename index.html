@@ -20,12 +20,18 @@
         <nav class="nav-container">
             <img src="oakland-svg.svg" alt="Oakline Studio Logo" width="300">
             <ul class="nav-links">
-                <li><a href="#about">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#team">Equipo</a></li>
-                <li><a href="#projects">Ejemplos</a></li>
-                <li><a href="#testimonials">Opiniones</a></li>
-                <li><a href="#contact" class="btn-nav">Contactar</a></li>
+                <li><a href="#about" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="#team" data-i18n="nav_team">Equipo</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Ejemplos</a></li>
+                <li><a href="#testimonials" data-i18n="nav_testimonials">Opiniones</a></li>
+                <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Contactar</a></li>
+                <!-- Botón de Idioma ES / EN -->
+                <li>
+                    <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma">
+                        <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,152 +39,152 @@
     <!-- SECCIÓN HERO -->
     <section class="hero" id="about">
         <div class="hero-content">
-            <span class="badge">🚀 Diseño y Desarrollo Web Profesional</span>
-            <h1>Páginas Web Modernas para Atraer Más Clientes a Tu Negocio</h1>
-            <p>Creamos sitios web ultra rápidos y adaptados a celulares para que tus clientes vean tus servicios y te contacten directo a WhatsApp en 1 clic.</p>
+            <span class="badge" data-i18n="hero_badge">🚀 Diseño y Desarrollo Web Profesional</span>
+            <h1 data-i18n="hero_title">Páginas Web Modernas para Atraer Más Clientes a Tu Negocio</h1>
+            <p data-i18n="hero_desc">Creamos sitios web ultra rápidos y adaptados a celulares para que tus clientes vean tus servicios y te contacten directo a WhatsApp en 1 clic.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Ver Trabajos</a>
-                <a href="#contact" class="btn btn-secondary">Pedir Demostración</a>
+                <a href="#projects" class="btn btn-primary" data-i18n="hero_btn1">Ver Trabajos</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn2">Pedir Demostración</a>
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN SERVICIOS -->
     <section class="services" id="services">
-        <h2>¿Qué Hacemos por Tu Negocio?</h2>
-        <p class="subtitle">Nos enfocamos en crear páginas sencillas y efectivas para aumentar tus ventas</p>
+        <h2 data-i18n="serv_title">¿Qué Hacemos por Tu Negocio?</h2>
+        <p class="subtitle" data-i18n="serv_subtitle">Nos enfocamos en crear páginas sencillas y efectivas para aumentar tus ventas</p>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
-                <h3>Carga Instantánea</h3>
-                <p>Tu página cargará al segundo en cualquier teléfono. Sin demoras para que no pierdas ningún cliente por lentitud.</p>
+                <h3 data-i18n="serv_1_title">Carga Instantánea</h3>
+                <p data-i18n="serv_1_desc">Tu página cargará al segundo en cualquier teléfono. Sin demoras para que no pierdas ningún cliente por lentitud.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <h3>100% Adaptado a Celulares</h3>
-                <p>La mayoría de personas te buscará desde su teléfono. Tu sitio se verá impecable y fácil de navegar en cualquier pantalla.</p>
+                <h3 data-i18n="serv_2_title">100% Adaptado a Celulares</h3>
+                <p data-i18n="serv_2_desc">La mayoría de personas te buscará desde su teléfono. Tu sitio se verá impecable y fácil de navegar en cualquier pantalla.</p>
             </div>
 
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
-                <h3>Botón Directo a WhatsApp</h3>
-                <p>Diseño enfocado a la acción: los visitantes podrán pedir información o agendar una cita con solo tocar un botón.</p>
+                <h3 data-i18n="serv_3_title">Botón Directo a WhatsApp</h3>
+                <p data-i18n="serv_3_desc">Diseño enfocado a la acción: los visitantes podrán pedir información o agendar una cita con solo tocar un botón.</p>
             </div>
         </div>
     </section>
 
     <!-- POR QUÉ TRABAJAR CON NOSOTROS -->
     <section class="why-us">
-        <h2>¿Por Qué Elegir Oakline Studio?</h2>
-        <p class="subtitle">La solución rápida y accesible para hacer crecer tu presencia en internet</p>
+        <h2 data-i18n="why_title">¿Por Qué Elegir Oakline Studio?</h2>
+        <p class="subtitle" data-i18n="why_subtitle">La solución rápida y accesible para hacer crecer tu presencia en internet</p>
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">⚡</div>
-                <h3>Entrega en 3 Días</h3>
-                <p>Trabajamos de forma ágil para que tu página web esté en línea y lista para recibir clientes esta misma semana.</p>
+                <h3 data-i18n="why_1_title">Entrega en 3 Días</h3>
+                <p data-i18n="why_1_desc">Trabajamos de forma ágil para que tu página web esté en línea y lista para recibir clientes esta misma semana.</p>
             </div>
             <div class="benefit-card">
                 <div class="benefit-icon">🎨</div>
-                <h3>Diseño Limpio y Profesional</h3>
-                <p>Presenta tus productos y servicios con una imagen moderna que genere confianza en tus nuevos clientes.</p>
+                <h3 data-i18n="why_2_title">Diseño Limpio y Profesional</h3>
+                <p data-i18n="why_2_desc">Presenta tus productos y servicios con una imagen moderna que genere confianza en tus nuevos clientes.</p>
             </div>
             <div class="benefit-card">
                 <div class="benefit-icon">🎯</div>
-                <h3>Atención Personalizada</h3>
-                <p>Nos encargamos de todo el proceso técnico para que no tengas que preocuparte por configuraciones complejas.</p>
+                <h3 data-i18n="why_3_title">Atención Personalizada</h3>
+                <p data-i18n="why_3_desc">Nos encargamos de todo el proceso técnico para que no tengas que preocuparte por configuraciones complejas.</p>
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN EQUIPO -->
     <section class="team" id="team">
-        <h2>Nuestro Equipo</h2>
-        <p class="subtitle">Especialistas dedicados al desarrollo de tu proyecto</p>
+        <h2 data-i18n="team_title">Nuestro Equipo</h2>
+        <p class="subtitle" data-i18n="team_subtitle">Especialistas dedicados al desarrollo de tu proyecto</p>
         <div class="team-grid">
             <div class="team-card">
                 <div class="member-avatar">
-                    <img src="avatar-connor.jpg" alt="Connor - Desarrollador Principal" class="avatar-img" onerror="this.style.display='none'">
+                    <img src="avatar-connor.jpg" alt="Connor" class="avatar-img" onerror="this.style.display='none'">
                     <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
                 </div>
                 <h3>Connor</h3>
-                <span class="role">Desarrollador Web Principal</span>
-                <p>Especializado en la creación de sitios web rápidos, eficientes y optimizados para celulares.</p>
+                <span class="role" data-i18n="team_1_role">Desarrollador Web Principal</span>
+                <p data-i18n="team_1_desc">Especializado en la creación de sitios web rápidos, eficientes y optimizados para celulares.</p>
             </div>
 
             <div class="team-card">
                 <div class="member-avatar">
-                    <img src="avatar-brother.jpg" alt="Co-Lead Developer" class="avatar-img" onerror="this.style.display='none'">
+                    <img src="avatar-brother.jpg" alt="Accell" class="avatar-img" onerror="this.style.display='none'">
                     <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
                 </div>
                 <h3>Accell</h3>
-                <span class="role">Especialista en Diseño Web</span>
-                <p>Experto en estructura visual, navegación fluida y maquetación centrada en la experiencia del usuario.</p>
+                <span class="role" data-i18n="team_2_role">Especialista en Diseño Web</span>
+                <p data-i18n="team_2_desc">Experto en estructura visual, navegación fluida y maquetación centrada en la experiencia del usuario.</p>
             </div>
         </div>
     </section>
 
     <!-- PROYECTOS DESTACADOS -->
     <section class="projects" id="projects">
-        <h2>Ejemplos de Sitios Web</h2>
-        <p class="subtitle">Demostraciones de páginas creadas para distintos sectores</p>
+        <h2 data-i18n="proj_title">Ejemplos de Sitios Web</h2>
+        <p class="subtitle" data-i18n="proj_subtitle">Demostraciones de páginas creadas para distintos sectores</p>
 
         <div class="projects-grid">
-            <!-- PROYECTO 1: ELYSIAN -->
+            <!-- PROYECTO 1 -->
             <article class="project-card">
                 <div class="project-image">
                     <img src="Elysian-1.PNG" alt="Vista previa de sitio de viajes">
                 </div>
                 <div class="project-info">
                     <h3>Elysian — Agencia de Viajes y Turismos</h3>
-                    <p>Página web elegante orientada a la reserva de servicios turísticos y presentación de destinos.</p>
+                    <p data-i18n="p1_desc">Página web elegante orientada a la reserva de servicios turísticos y presentación de destinos.</p>
                     <div class="project-techs">
                         <span><i class="devicon-html5-plain"></i> HTML5</span>
                         <span><i class="devicon-sass-original"></i> CSS / SASS</span>
                         <span><i class="devicon-javascript-plain"></i> JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://elysian-travel.netlify.app" target="_blank" rel="noopener" class="btn-card">Ver Sitio Demo</a>
+                        <a href="https://elysian-travel.netlify.app" target="_blank" rel="noopener" class="btn-card" data-i18n="btn_demo">Ver Sitio Demo</a>
                         <a href="https://github.com/mayconnor801-dot" target="_blank" rel="noopener" class="btn-card btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROYECTO 2: PLOMERÍA -->
+            <!-- PROYECTO 2 -->
             <article class="project-card">
                 <div class="project-image">
                     <img src="Plumbing-1.PNG" alt="Vista previa de sitio de servicios para el hogar">
                 </div>
                 <div class="project-info">
-                    <h3>Servicios Express — Atención a Domicilio</h3>
-                    <p>Sitio enfocado en servicios técnicos y reparaciones del hogar con llamada directa y botón de WhatsApp.</p>
+                    <h3 data-i18n="p2_title">Servicios Express — Atención a Domicilio</h3>
+                    <p data-i18n="p2_desc">Sitio enfocado en servicios técnicos y reparaciones del hogar con llamada directa y botón de WhatsApp.</p>
                     <div class="project-techs">
                         <span><i class="devicon-html5-plain"></i> HTML5</span>
                         <span><i class="devicon-sass-original"></i> CSS / SASS</span>
                         <span><i class="devicon-javascript-plain"></i> JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://plomeros.netlify.app" target="_blank" rel="noopener" class="btn-card">Ver Sitio Demo</a>
+                        <a href="https://plomeros.netlify.app" target="_blank" rel="noopener" class="btn-card" data-i18n="btn_demo">Ver Sitio Demo</a>
                         <a href="https://github.com/mayconnor801-dot" target="_blank" rel="noopener" class="btn-card btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROYECTO 3: AURA HEALTH -->
+            <!-- PROYECTO 3 -->
             <article class="project-card">
                 <div class="project-image">
                     <img src="aurahealth.PNG" alt="Vista previa de sitio de servicios médicos">
                 </div>
                 <div class="project-info">
-                    <h3>Aura Health — Clínica de Servicios Médicos</h3>
-                    <p>Diseño web para especialidades de salud, facilitando la programación de citas en línea de forma rápida.</p>
+                    <h3 data-i18n="p3_title">Aura Health — Clínica de Servicios Médicos</h3>
+                    <p data-i18n="p3_desc">Diseño web para especialidades de salud, facilitando la programación de citas en línea de forma rápida.</p>
                     <div class="project-techs">
                         <span><i class="devicon-html5-plain"></i> HTML5</span>
                         <span><i class="devicon-sass-original"></i> CSS / SASS</span>
                         <span><i class="devicon-javascript-plain"></i> JS</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://aurahealth-eight.vercel.app" target="_blank" rel="noopener" class="btn-card">Ver Sitio Demo</a>
+                        <a href="https://aurahealth-eight.vercel.app" target="_blank" rel="noopener" class="btn-card" data-i18n="btn_demo">Ver Sitio Demo</a>
                         <a href="https://github.com/mayconnor801-dot" target="_blank" rel="noopener" class="btn-card btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
                     </div>
                 </div>
@@ -188,34 +194,34 @@
 
     <!-- CARRUSEL DE TESTIMONIOS -->
     <section class="testimonials" id="testimonials">
-        <h2>Opiniones de Nuestros Clientes</h2>
-        <p class="subtitle">Lo que dicen los dueños de negocios tras trabajar con Oakline Studio</p>
+        <h2 data-i18n="test_title">Opiniones de Nuestros Clientes</h2>
+        <p class="subtitle" data-i18n="test_subtitle">Lo que dicen los dueños de negocios tras trabajar con Oakline Studio</p>
         
         <div class="testimonial-carousel">
             <div class="testimonial-card active">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="quote">"Oakline Studio transformó nuestra presencia en internet. La página carga al instante y nuestros clientes agendan mucho más rápido por WhatsApp."</p>
+                <p class="quote" data-i18n="t1_quote">"Oakline Studio transformó nuestra presencia en internet. La página carga al instante y nuestros clientes agendan mucho más rápido por WhatsApp."</p>
                 <div class="client-meta">
                     <strong>David Miller</strong>
-                    <span>Director de Marketing</span>
+                    <span data-i18n="t1_role">Director de Marketing</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="quote">"Trabajar con ellos fue muy fácil. La página web que hicieron para el negocio aumentó los mensajes que recibimos desde el teléfono."</p>
+                <p class="quote" data-i18n="t2_quote">"Trabajar con ellos fue muy fácil. La página web que hicieron para el negocio aumentó los mensajes que recibimos desde el teléfono."</p>
                 <div class="client-meta">
                     <strong>Sarah Jenkins</strong>
-                    <span>Fundadora de Negocio Local</span>
+                    <span data-i18n="t2_role">Fundadora de Negocio Local</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="quote">"Excelente calidad de diseño y tiempo de entrega récord. Totalmente recomendados para cualquier negocio que busque crecer en internet."</p>
+                <p class="quote" data-i18n="t3_quote">"Excelente calidad de diseño y tiempo de entrega récord. Totalmente recomendados para cualquier negocio que busque crecer en internet."</p>
                 <div class="client-meta">
                     <strong>Marcus Vance</strong>
-                    <span>Gerente de Proyecto</span>
+                    <span data-i18n="t3_role">Gerente de Proyecto</span>
                 </div>
             </div>
         </div>
@@ -223,33 +229,33 @@
 
     <!-- SECCIÓN DE CONTACTO -->
     <section class="contact" id="contact">
-        <h2>Construyamos la Web de Tu Negocio</h2>
-        <p class="subtitle">¿Listo para destacar en internet y recibir más clientes?</p>
+        <h2 data-i18n="contact_title">Construyamos la Web de Tu Negocio</h2>
+        <p class="subtitle" data-i18n="contact_subtitle">¿Listo para destacar en internet y recibir más clientes?</p>
         
         <div class="contact-container">
             <form class="contact-form" action="https://formspree.io/f/xyeyezka" method="POST">
                 <div class="form-group">
-                    <label for="name">Tu Nombre / Nombre de tu Negocio</label>
-                    <input type="text" id="name" name="name" placeholder="Ej. Taller Central / Juan Pérez" required>
+                    <label for="name" data-i18n="form_label_name">Tu Nombre / Nombre de tu Negocio</label>
+                    <input type="text" id="name" name="name" placeholder="Ej. Taller Central / Juan Pérez" data-i18n-ph="form_ph_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
+                    <label for="email" data-i18n="form_label_email">Correo Electrónico</label>
                     <input type="text" id="email" name="email" placeholder="ejemplo@gmail.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Detalles del Proyecto</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Cuéntanos un poco sobre tu negocio y qué servicios te gustaría mostrar en tu página..." required></textarea>
+                    <label for="message" data-i18n="form_label_msg">Detalles del Proyecto</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Cuéntanos un poco sobre tu negocio y qué servicios te gustaría mostrar en tu página..." data-i18n-ph="form_ph_msg" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Solicitar Propuesta Gratis</button>
+                <button type="submit" class="btn btn-primary btn-block" data-i18n="form_btn">Solicitar Propuesta Gratis</button>
             </form>
 
             <div class="contact-direct">
-                <h3>Canales Directos</h3>
-                <p>Escríbenos o conócenos a través de nuestras plataformas oficiales:</p>
+                <h3 data-i18n="direct_title">Canales Directos</h3>
+                <p data-i18n="direct_subtitle">Escríbenos o conócenos a través de nuestras plataformas oficiales:</p>
                 <ul class="contact-list">
                     <li>
                         <i class="fa-solid fa-envelope icon-contact"></i>
-                        <span>Correo:</span>
+                        <span data-i18n="direct_email">Correo:</span>
                         <a href="mailto:oaklinestudio.business@gmail.com">oaklinestudio.business@gmail.com</a>
                     </li>
                     <li>
@@ -259,7 +265,7 @@
                     </li>
                     <li>
                         <i class="fa-brands fa-github icon-contact"></i>
-                        <span>Portafolio Técnico:</span>
+                        <span data-i18n="direct_github">Portafolio Técnico:</span>
                         <a href="https://github.com/mayconnor801-dot" target="_blank" rel="noopener">github.com/mayconnor801-dot</a>
                     </li>
                 </ul>
@@ -269,7 +275,7 @@
 
     <!-- PIE DE PÁGINA (FOOTER) -->
     <footer class="footer">
-        <p>&copy; 2026 Oakline Studio. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Oakline Studio. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
     </footer>
 
     <!-- SCRIPT JAVASCRIPT -->
