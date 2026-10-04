@@ -7,12 +7,13 @@
   --bg-card-hover: #334155;     /* Estado hover de alto contraste */
   --text-main: #f8fafc;         /* Texto claro y nítido */
   --text-muted: #94a3b8;        /* Texto secundario profesional */
-  --primary: #2563eb;          /* Azul corporativo de alta confianza */
-  --primary-hover: #1d4ed8;    /* Azul profundo para interacción */
-  --accent: #38bdf8;           /* Azul cyan para destacar elementos clave */
+  --primary: #2563eb;           /* Azul corporativo de alta confianza */
+  --primary-hover: #1d4ed8;     /* Azul profundo para interacción */
+  --accent: #38bdf8;            /* Azul cyan para destacar elementos clave */
   --accent-glow: rgba(56, 189, 248, 0.15); /* Resplandor cyan fino */
   --border-color: rgba(255, 255, 255, 0.08); /* Bordes sobrios */
 }
+
 /* RESET GENERAL Y TIPOGRAFÍA */
 * {
   margin: 0;
@@ -193,7 +194,7 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* GRIDS PARA SERVICIOS, BENFICIOS Y EQUIPO */
+/* GRIDS PARA SERVICIOS, BENEFICIOS Y EQUIPO */
 .services-grid, .benefits-grid, .team-grid, .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -295,18 +296,19 @@ h2 {
 }
 
 .btn-card {
-  padding: 0.4rem 0.9rem;
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
   font-size: 0.85rem;
   border-radius: 6px;
   background-color: var(--primary);
   color: #fff;
   font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-outline {
-  background-color: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
+.btn-card:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
 }
 
 /* TESTIMONIOS */
